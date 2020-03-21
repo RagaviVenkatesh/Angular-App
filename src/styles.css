@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    color:orangered;
+    font-size: 300%;
+}
+
+h2,h3{
+    color:black;
+    font-weight: lighter;
+}
+
+body{
+    margin: 2em;
+}
+
+*{
+    font-family: sans-serif;
+}

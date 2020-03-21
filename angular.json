@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Tour-of-ProGrads": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Tour-of-ProGrads"
+    }
+  },
+  "defaultProject": "Tour-of-ProGrads",
+  "cli": {
+    "analytics": "9d13e7ec-564c-4325-aa55-5cf4ca7b2d4d"
+  }
 }
