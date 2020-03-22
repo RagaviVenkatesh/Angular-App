@@ -5,11 +5,13 @@ import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProGradsComponent } from './pro-grads/pro-grads.component';
+import { ProgradDetailComponent } from './prograd-detail/prograd-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProGradsComponent
+    ProGradsComponent,
+    ProgradDetailComponent
   ],
   imports: [
     BrowserModule,

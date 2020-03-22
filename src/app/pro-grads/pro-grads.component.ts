@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PROGRADS} from '../mock-pro-grads';
 import {Prograd} from '../pro-grads';
+import {ProgradService} from '../prograd.service';
 
 @Component({
   selector: 'app-pro-grads',
@@ -9,14 +10,21 @@ import {Prograd} from '../pro-grads';
 })
 export class ProGradsComponent implements OnInit {
 
-  prograds = PROGRADS;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  prograds: Prograd[];
 
   selectedPrograd: Prograd;
+
+  constructor(private progradService: ProgradService)
+  {}
+
+  getPrograds(): void{
+    this.prograds = this.progradService.getPrograds();
+  }
+
+  ngOnInit(){
+    this.getPrograds();
+  }
+
   onSelect(prograd:Prograd): void{
     this.selectedPrograd = prograd;
   }

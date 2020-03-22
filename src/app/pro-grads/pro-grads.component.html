@@ -4,13 +4,6 @@
         <span class="badge">{{prograd.id}}</span>{{prograd.name}}
     </li>
 
-    <div *ngIf="selectedPrograd"> 
-    <h2>{{selectedPrograd.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedPrograd.id}}</div>
-    <div>
-        <label>name:
-            <input [(ngModel)] = "selectedPrograd.name" placeholder="name" />
-        </label>
-    </div>
-</div>
 </ul>
+
+<app-prograd-detail [prograd] ="selectedPrograd"></app-prograd-detail>
