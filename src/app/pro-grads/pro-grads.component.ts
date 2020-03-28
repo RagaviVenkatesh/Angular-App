@@ -18,7 +18,7 @@ export class ProGradsComponent implements OnInit {
   {}
 
   getPrograds(): void{
-    this.prograds = this.progradService.getPrograds();
+    this.progradService.getPrograds().subscribe(prograds => this.prograds = prograds);
   }
 
   ngOnInit(){
